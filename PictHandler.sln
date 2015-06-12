@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictHandler", "PictHandler\PictHandler.csproj", "{B5AE9903-7AD4-492F-BB56-2FFA1A14FAA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileFunctions", "FileFunctions\FileFunctions.csproj", "{8026D424-B2D3-4090-9F48-9D9D21AAC7EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consolidator", "Consolidator\Consolidator.csproj", "{FB378C8B-0EA5-4662-95EA-139D7659095E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{E3E157A2-2462-4E1F-9425-03A52C4D0730}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5AE9903-7AD4-492F-BB56-2FFA1A14FAA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5AE9903-7AD4-492F-BB56-2FFA1A14FAA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5AE9903-7AD4-492F-BB56-2FFA1A14FAA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5AE9903-7AD4-492F-BB56-2FFA1A14FAA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8026D424-B2D3-4090-9F48-9D9D21AAC7EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8026D424-B2D3-4090-9F48-9D9D21AAC7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8026D424-B2D3-4090-9F48-9D9D21AAC7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8026D424-B2D3-4090-9F48-9D9D21AAC7EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB378C8B-0EA5-4662-95EA-139D7659095E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB378C8B-0EA5-4662-95EA-139D7659095E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB378C8B-0EA5-4662-95EA-139D7659095E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB378C8B-0EA5-4662-95EA-139D7659095E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3E157A2-2462-4E1F-9425-03A52C4D0730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3E157A2-2462-4E1F-9425-03A52C4D0730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3E157A2-2462-4E1F-9425-03A52C4D0730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3E157A2-2462-4E1F-9425-03A52C4D0730}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

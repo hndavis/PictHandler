@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FileInfoItems>
+  <Picts>
+    <ext>*.jpg</ext>
+    <ext>*.png</ext>
+    <ext>*.bmp</ext>
+    <ext>*.gif</ext>
+    <ext>*.tif</ext>
+  </Picts>
+  <video>
+    <ext>*.mp4</ext>
+  </video>
+  <Exclude>
+    <dirs>
+      <dir>mail</dir>
+      <dir>AppData</dir>
+      <dir>readme_files</dir>
+      <dir>Sample Pictures</dir>
+      <dir>dynamic_cast</dir>
+      <dir>UnityWCFSample</dir>
+      <dir>z:\backups\dac3\dev\C#</dir>
+      <dir>z:\backups\dac3\docs</dir>
+      <dir>z:\backups\dac3\docs</dir>
+      <dir>z:\dac11\users2</dir>
+      <dir>z:\dac11\users2\Users\heddy\AppData\Local\Microsoft\Zune\Art Cache</dir>
+      <dir>z:\dac11\users2\Users\heddy\AppData</dir>
+      <dir>z:\dac11\users2\Users\heddy\Documents\My Stationery</dir>
+      <dir>z:\dac11\users2\Users\heddy - Copy</dir>
+      <dir>z:\dac11\users2\Users\heddy_000</dir>
+      <dir>z:\dac11\users2\Users\hndavis\AppData</dir>
+      <dir>z:\dac11\users2\Users\hndavis\Music</dir>
+      <dir>z:\DIwithUnitySample</dir>
+      <dir>z:\music</dir>
+      <dir>boost</dir>
+      <dir>dev</dir>
+      <dir>dups</dir>
+      <dir>"C:\Users\hndavis\AppData</dir>
+    </dirs>
+    <files>
+      <file>AppData</file>
+    </files>
+  </Exclude>
+  <Include>
+    <dirs>
+      <dir>C:\Users\hndavis</dir>
+    </dirs>
+  </Include>
+</FileInfoItems>

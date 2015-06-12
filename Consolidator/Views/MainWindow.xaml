@@ -1,0 +1,62 @@
+﻿<Window x:Class="Consolidator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:viewModel="clr-namespace:Consolidator.ViewModel"
+        Title="Consolidator" Height="350" Width="525" >
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="ContentVisablityConverter" />
+        <DataTemplate x:Key="SrcLister">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" MinHeight="20" MaxHeight=".10*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                    <Label Grid.Row="0">lstExcluded </Label>
+                    <ListBox Grid.Row="1" Name="Excluded" ItemsSource="{Binding excluded}"  ScrollViewer.VerticalScrollBarVisibility="Visible"
+                                 Height="20"></ListBox>
+            </Grid>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid Margin="0,0,0.4,-29.2">
+        <Grid.DataContext>
+            <viewModel:MainFunc/>
+            </Grid.DataContext>
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="2*"/>
+            <RowDefinition  Height="2*"/>
+            <RowDefinition  Height="3*"/>
+            <RowDefinition   Height="Auto"/>
+            <RowDefinition  />
+        </Grid.RowDefinitions>
+        <Grid  Grid.Row="0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*" MaxHeight="30" MinHeight="30"></RowDefinition>
+                    <RowDefinition Height="7*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Margin="2,2,2,2" >lstExcluded</Label>
+                <ListBox Grid.Row="1" Name="Excluded" ItemsSource="{Binding excluded}"  
+                  Margin="5,5,5,5"></ListBox>
+            
+        </Grid>
+        <StackPanel Grid.Row="1">
+            <Label >Included</Label>
+            <ListBox Name="Included" ItemsSource="{Binding included}" 
+                     ScrollViewer.VerticalScrollBarVisibility="Visible"
+                     Margin="5,0,5,5"></ListBox>
+        </StackPanel>
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" MaxHeight="30" MinHeight="30"></RowDefinition>
+                <RowDefinition Height="7*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0">Files</Label>
+            <ListBox Grid.Row="1" Name="lstFileToCopy"  ItemsSource="{Binding FilesToCopy}"
+                     ScrollViewer.VerticalScrollBarVisibility="Visible"></ListBox>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.Row="3">
+            <Button Name="pbLoad" Margin="90,5,10,5" Width="200" Command="{Binding CmdFind}">Load</Button>
+            <Button Name="pbExit" Margin="5,5,5,5" Width="120" Command="{Binding CmdExit}" CommandParameter="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}">Exit</Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
